@@ -1,8 +1,8 @@
 # Deep Neural Network Class Implementation: Step by Step
 
-This is a work derivated from the first course of the coursera [deeplearning.ai](deeplearning.ai) specialization.
-I caught all the functions that are implemented during the course, and use these functions to scructure the code using Object Oritend aproach to 
-create a simple **Deep Neural Network Class** in python, the code was the code was written/organized 
+This is a work derived from the first course of the coursera [deeplearning.ai](deeplearning.ai) specialization.
+I caught all the functions that was implemented during the course, and use these functions to scructure the code using Object Oritend aproach to 
+create a simple **Deep Neural Network Class** in python, the code was written/organized 
 with the focus on learning and clarity, for whoever who wants to know how to implement a Neural Net Class from scratch
 
 - In this project, there is a class with all the methods required to train a deep neural network:
@@ -38,15 +38,8 @@ neuralNet.plotCost()
 pred_train = neuralNet.predict(train_x) #To get the predict values
 neuralNet.binaryScore(pred_train, train_y) #To print Accuracy, Precision, Recall, Confusion matrix
 ```
-
-**Notation of the project**:
-- Superscript $[l]$ denotes a quantity associated with the $l^{th}$ layer.
-    - Example: $a^{[L]}$ is the $L^{th}$ layer activation. $W^{[L]}$ and $b^{[L]}$ are the $L^{th}$ layer parameters.
-- Superscript $(i)$ denotes a quantity associated with the $i^{th}$ example.
-    - Example: $x^{(i)}$ is the $i^{th}$ training example.
-- Lowerscript $i$ denotes the $i^{th}$ entry of a vector.
-    - Example: $a^{[l]}_i$ denotes the $i^{th}$ entry of the $l^{th}$ layer's activations).
     
 **Based on**
- All the code base, notations, functions was based on the material from the [Deep Learning Specialization on Coursera](https://www.coursera.org/specializations/deep-learning).
+
+All the code base, notations, functions was based on the material from the [Deep Learning Specialization on Coursera](https://www.coursera.org/specializations/deep-learning).
  
