@@ -12,6 +12,32 @@ with the focus on learning and clarity, for whoever who wants to know how to imp
 - Then NerutalNet class will be used to build a deep neural network for Cat no Cat image classification as an example
 
 **How to Use**
+- To train a neural net:
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from NeuralNet import NeuralNet
+
+train_x = None #Numpy matrix (n,m)
+train_y = None #Numpy matrix (1,m)
+
+test_x = None #Numpy matrix (n,mt)
+test_y = None #Numpy matrix (1,mt)
+
+layers_dims = [50, 20, 7, 5, 1] # 5-layer model
+
+# Create a NeuralNet object with hiperparameters, X and Y values
+neuralNet = NeuralNet(train_x, train_y, layers_dims, learning_rate = 0.007, num_iterations = 2500, print_cost = True)
+# Fit the model
+neuralNet.fit()
+# Plot the cost over time
+neuralNet.plotCost()
+```
+- To predict values:
+```python
+pred_train = neuralNet.predict(train_x) #To get the predict values
+neuralNet.binaryScore(pred_train, train_y) #To print Accuracy, Precision, Recall, Confusion matrix
+```
 
 **Notation of the project**:
 - Superscript $[l]$ denotes a quantity associated with the $l^{th}$ layer.
